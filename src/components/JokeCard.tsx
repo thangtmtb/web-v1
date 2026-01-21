@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FiHeart, FiMessageCircle, FiBookmark, FiEye } from 'react-icons/fi';
+import { FiHeart, FiMessageCircle, FiEye } from 'react-icons/fi';
 import { formatDistanceToNow } from 'date-fns';
 import { vi } from 'date-fns/locale';
 import type { Joke } from '../lib/supabase';

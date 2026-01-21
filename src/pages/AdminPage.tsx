@@ -6,7 +6,6 @@ import {
     FiBarChart2,
     FiMessageSquare,
     FiUsers,
-    FiHeart,
     FiClock,
     FiEdit2,
     FiSave

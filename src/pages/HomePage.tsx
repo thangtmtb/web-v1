@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { FiSearch, FiTrendingUp } from 'react-icons/fi';
+// FiSearch, FiTrendingUp removed due to misuse/unused in this file context
 import { jokeService } from '../services/jokeService';
 import { categoryService } from '../services/categoryService';
 import JokeListItem from '../components/JokeListItem';
@@ -11,7 +11,7 @@ import './HomePage.css';
 const JOKES_PER_PAGE = 10;
 
 export default function HomePage() {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const [selectedCategory, setSelectedCategory] = useState<string | undefined>();
     const searchQuery = searchParams.get('q') || '';
     const [page, setPage] = useState(1);
